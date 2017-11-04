@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+".\objects\snake.o"
+".\objects\main.o"
+".\objects\vga.o"
+".\objects\str_dealing.o"
+".\objects\bitmap.o"
+".\objects\controller.o"
+".\objects\delay.o"
+".\objects\adcrand.o"
+".\objects\misc.o"
+".\objects\stm32f10x_adc.o"
+".\objects\stm32f10x_dma.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_tim.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\vga_snake.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\vga_snake.map" -o .\Objects\vga_snake.axf
