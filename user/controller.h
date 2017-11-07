@@ -31,10 +31,10 @@
 #define PS2_START        0
 #define PS2_REQUEST_DATA 1
 
-#define PS2_DI  GPIO_Pin_1
-#define PS2_DO  GPIO_Pin_2
-#define PS2_CS  GPIO_Pin_3
-#define PS2_CLK GPIO_Pin_4
+#define PS2_DI  GPIO_Pin_3              // DATA
+#define PS2_DO  GPIO_Pin_4              // CMD
+#define PS2_CS  GPIO_Pin_5
+#define PS2_CLK GPIO_Pin_6
 
 #define PSB_SELECT      0
 #define PSB_L3          1
