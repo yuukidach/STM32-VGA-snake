@@ -1,5 +1,5 @@
 Dependencies for Project 'vga_snake', Target 'Target 1': (DO NOT MODIFY !)
-F (.\user\snake.c)(0x59FDCF94)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\snake.o --omf_browse .\objects\snake.crf --depend .\objects\snake.d)
+F (.\user\snake.c)(0x5A02E405)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\snake.o --omf_browse .\objects\snake.crf --depend .\objects\snake.d)
 I (user\snake.h)(0x59FDC895)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
@@ -18,9 +18,9 @@ I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f1
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9EB20)
 I (user\vga.h)(0x59FDC809)
-I (user\str_dealing.h)(0x59FC7C7A)
+I (user\str_dealing.h)(0x5A02E400)
 I (user\delay.h)(0x59FC7C5A)
-I (user\controller.h)(0x59FC7EA0)
+I (user\controller.h)(0x5A02DAB2)
 I (user\adcrand.h)(0x59FD8171)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
 F (.\user\main.c)(0x59FDBD35)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
@@ -42,11 +42,11 @@ I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f1
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9EB20)
 I (user\snake.h)(0x59FDC895)
 I (user\vga.h)(0x59FDC809)
-I (user\str_dealing.h)(0x59FC7C7A)
+I (user\str_dealing.h)(0x5A02E400)
 I (user\delay.h)(0x59FC7C5A)
 I (user\adcrand.h)(0x59FD8171)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (user\controller.h)(0x59FC7EA0)
+I (user\controller.h)(0x5A02DAB2)
 F (.\user\vga.c)(0x59FDC688)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\vga.o --omf_browse .\objects\vga.crf --depend .\objects\vga.d)
 I (user\vga.h)(0x59FDC809)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
@@ -65,9 +65,9 @@ I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f1
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_spi.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9EB20)
-I (user\str_dealing.h)(0x59FC7C7A)
-F (.\user\str_dealing.c)(0x59F86E32)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\str_dealing.o --omf_browse .\objects\str_dealing.crf --depend .\objects\str_dealing.d)
-I (user\str_dealing.h)(0x59FC7C7A)
+I (user\str_dealing.h)(0x5A02E400)
+F (.\user\str_dealing.c)(0x5A02E3F8)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\str_dealing.o --omf_browse .\objects\str_dealing.crf --depend .\objects\str_dealing.d)
+I (user\str_dealing.h)(0x5A02E400)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
 I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -101,8 +101,8 @@ I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f1
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_spi.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9EB20)
-F (.\user\controller.c)(0x59FC7EA5)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\controller.o --omf_browse .\objects\controller.crf --depend .\objects\controller.d)
-I (user\controller.h)(0x59FC7EA0)
+F (.\user\controller.c)(0x5A01D171)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\controller.o --omf_browse .\objects\controller.crf --depend .\objects\controller.d)
+I (user\controller.h)(0x5A02DAB2)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)
 I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -138,7 +138,7 @@ I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f1
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_spi.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_tim.h)(0x52F9EB20)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\misc.h)(0x52F9EB20)
-F (.\user\adcrand.c)(0x59FDBDA5)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\adcrand.o --omf_browse .\objects\adcrand.crf --depend .\objects\adcrand.d)
+F (.\user\adcrand.c)(0x59FEBCE4)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\user-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE"-I "D:\150325\Projects\STM32 Ã∞≥‘…ﬂ VGAœ‘ æ\Code\RTE\Device\STM32F103C8"-I D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\adcrand.o --omf_browse .\objects\adcrand.crf --depend .\objects\adcrand.d)
 I (user\adcrand.h)(0x59FD8171)
 I (D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (D:\Keil\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm3.h)(0x5625B70C)

@@ -65,7 +65,6 @@
 
 #define PRESSED 0
 
-void controlModeConfirm_Config(void);
 void controller_config(void);
 void sendCmd2PS2(uint8_t command);
 void sendCmd2MCU(void);
@@ -79,7 +78,6 @@ void turnOnModeChange(void);
 void turnOnVibrationMode(void);
 void saveChangesAndExit(void);
 void PS2_Vibration(u8 motor1, u8 motor2);
-uint8_t isAutoControl(void);
 uint8_t getPart3Direction(void);
 
 void TIM3_GPIO_Config(void);

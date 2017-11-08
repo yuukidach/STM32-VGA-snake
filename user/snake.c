@@ -56,20 +56,23 @@ void snake_start(void)
     vga_clear_screen();
     vga_draw_rec(0, 0, 300, 200, GDI_ROP_COPY);
 
-    // Draw the right part of the screen to show the score player get
-    vga_draw_text(335, 70, "SCORE", GDI_ROP_COPY);
+    // Draw a score notation to the right part of the screen 
+    vga_draw_text(332, 70, "SCORE", GDI_ROP_COPY);
 
     snake_init();
     food_generate();
 
     draw_snake();
     draw_block(food->x, food->y, GDI_ROP_COPY);
+    // Draw the score 
+    vga_draw_text(347, 85, "00", GDI_ROP_COPY);
 
     while(on_snaking() == CONTINUE) {
         draw_snake();
         if (score_flag == FULL) {
             food_generate();
             draw_block(food->x, food->y, GDI_ROP_COPY);
+            vga_draw_text(332, 85, u32_2pu8(my_snake->len - 6), GDI_ROP_COPY);
         }
         delay_ms(move_time);
     }
