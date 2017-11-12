@@ -7,7 +7,7 @@ STM32 VGA Snake Game
 ## Descriptions
 Creating a snake game with STM32, and showing it on the screen through VGA. It's quite a simple project that we can finish it in no time. It's also easy to test. All we need are just a screen, some DuPont lines and focus.  
 
-VGA settins: 800 x 600 @ 56Hz  
+VGA settings: 800 x 600 @ 56Hz  
 \(Real pixel value: 400 x 200\)
 
 ## Material
@@ -17,7 +17,7 @@ Potentiometer
 PS2 controller
 
 ## Pin Connections
-|||
+|Pin|Function|
 | :---: | :---: |
 | PA1   | Vsync |
 | PA7   | Green |
