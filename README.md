@@ -17,7 +17,7 @@ Potentiometer
 PS2 controller
 
 ## Pin Connections
-|
+|||
 | :---: | :---: |
 | PA1   | Vsync |
 | PA7   | Green |
