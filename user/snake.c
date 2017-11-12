@@ -4,12 +4,14 @@
 #include "adcrand.h"
 #include "delay.h"
 
-uint16_t move_time = 800;
+uint16_t move_time = 200;
 
 struct snake_body *tail, *head;
 struct snake_food *food;
 struct snake *my_snake;
-int8_t score_flag = 0;
+int8_t score_flag = HUNGRY;
+
+extern uint8_t score_map[30][2];
 
 // Return value: 0 -- alive
 //               1 -- dead
@@ -17,14 +19,14 @@ void draw_block(int16_t x, int16_t y, uint16_t rop)
 {
     uint16_t real_x, real_y;
 
-    // The real x point is 3x-2, and the real y point is 2y-1
-    real_x = 3*x-2;
-    real_y = (y<<1) - 1;
+    // The real x point is 6x-5, and the real y point is 4y-3
+    real_x = 6*x-5;
+    real_y = (y<<2) - 3;
 
     // A block contains 3 pixels in x-axis, and 2 pixels in y-axis
-    for (int8_t i = 0; i < 3; ++i) {
-        for (int8_t j = 0; j < 2; ++j) {
-            vga_draw_point(NULL, real_x+i, real_y+i, rop);
+    for (int8_t i = 0; i < 6; ++i) {
+        for (int8_t j = 0; j < 4; ++j) {
+            vga_draw_point(NULL, real_x+i, real_y+j, rop);
         }
     }
 }
@@ -47,7 +49,7 @@ void snake_start(void)
     vga_clear_screen();
     vga_draw_rec(0, 0, (VID_PIXELS_X - 1), VID_VSIZE - 1, GDI_ROP_COPY);
   	vga_draw_text(185, 70, "SNAKE", GDI_ROP_COPY);
-  	vga_draw_text(146, 85, "PRESS START BUTTON", GDI_ROP_COPY);
+  	vga_draw_text(149, 85, "PRESS START BUTTON", GDI_ROP_COPY);
 
     // Waiting for the start button to be pressed
     while(getButtonData() != PSB_R2);
@@ -57,7 +59,7 @@ void snake_start(void)
     vga_draw_rec(0, 0, 300, 200, GDI_ROP_COPY);
 
     // Draw a score notation to the right part of the screen 
-    vga_draw_text(332, 70, "SCORE", GDI_ROP_COPY);
+    vga_draw_text(338, 70, "SCORE", GDI_ROP_COPY);
 
     snake_init();
     food_generate();
@@ -72,15 +74,15 @@ void snake_start(void)
         if (score_flag == FULL) {
             food_generate();
             draw_block(food->x, food->y, GDI_ROP_COPY);
-            vga_draw_text(332, 85, u32_2pu8(my_snake->len - 6), GDI_ROP_COPY);
+            vga_draw_nwords(347, 85, (pu8)score_map[my_snake->len - 4], GDI_ROP_COPY, 2);
         }
-        delay_ms(move_time);
+        delay_ms((move_time - (my_snake->len-4)*6));
     }
 
     // When game over
     free_snake();
-    while(1)
-        show_score();
+    show_score();
+    while(1);
 }
 
 
@@ -96,14 +98,14 @@ void snake_init(void)
     int i;
 
     tail = head = (struct snake_body*)malloc(sizeof(struct snake_body));
-    tail->x = 7;
-    tail->y = 50;
+    tail->x = 4;
+    tail->y = 25;
     tail->next = NULL;
 
     food = (struct snake_food*)malloc(sizeof(struct snake_food));
     my_snake = (struct snake*)malloc(sizeof(struct snake));
     my_snake->dir = SNAKE_RIGHT;
-    my_snake->len = 6;
+    my_snake->len = 4;
     for(i = 0; i < my_snake->len - 1; i++)
         add_head(tail->x + 1, tail->y);
 }
@@ -127,6 +129,9 @@ void food_generate(void)
 
     // Re-generate food
     if (m == 0) food_generate();
+    
+    // Clear the score flag so that our snake can eat again.s
+    score_flag = HUNGRY;
 }
 
 
@@ -155,9 +160,9 @@ void clear_tail(void)
 
 void is_dir_right(uint8_t dir)
 {
-    if ((int8_t)my_snake->dir - (int8_t)dir == -2 || (int8_t)my_snake->dir - (int8_t)dir == 2)
+    if ((int8_t)my_snake->dir-(int8_t)dir == -2 || (int8_t)my_snake->dir-(int8_t)dir == 2)
         return;
-    else
+    else if (dir==PSB_PAD_UP || dir==PSB_PAD_DOWN || dir==PSB_PAD_RIGHT || dir==PSB_PAD_LEFT)
         my_snake->dir = dir;
 }
 
@@ -217,6 +222,6 @@ void show_score(void)
 {
     vga_clear_screen();
     vga_draw_rec(0,0,(VID_PIXELS_X - 1),VID_VSIZE - 1,0);
-	  vga_draw_text(175, 55, "SNAKE", GDI_ROP_COPY);
-	  vga_draw_text(146, 100, "SURPRISE, UR MOTHERFUKER", GDI_ROP_COPY);
+	vga_draw_text(160, 73, "YOUR FINAL SCORE", GDI_ROP_COPY);
+	vga_draw_nwords(197, 90, (pu8)score_map[my_snake->len - 4], GDI_ROP_COPY, 2);
 }

@@ -22,19 +22,16 @@
 #define YES 1
 #define NO 0
 
-#define PART3LEFT  0
-#define PART3RIGHT 1
-
 #define PS2_GPIO         GPIOB
 #define PS2_CLK_GPIO     RCC_APB2Periph_GPIOB
 
 #define PS2_START        0
 #define PS2_REQUEST_DATA 1
 
-#define PS2_DI  GPIO_Pin_3              // DATA
-#define PS2_DO  GPIO_Pin_4              // CMD
-#define PS2_CS  GPIO_Pin_5
-#define PS2_CLK GPIO_Pin_6
+#define PS2_DI  GPIO_Pin_4              // DATA
+#define PS2_DO  GPIO_Pin_5              // CMD
+#define PS2_CS  GPIO_Pin_6
+#define PS2_CLK GPIO_Pin_7
 
 #define PSB_SELECT      0
 #define PSB_L3          1
@@ -78,10 +75,6 @@ void turnOnModeChange(void);
 void turnOnVibrationMode(void);
 void saveChangesAndExit(void);
 void PS2_Vibration(u8 motor1, u8 motor2);
-uint8_t getPart3Direction(void);
-
-void TIM3_GPIO_Config(void);
-void TIM3_Mode_Config(void);
 
 #endif /*__CONTROLLER_H*/
 

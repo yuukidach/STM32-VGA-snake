@@ -20,11 +20,14 @@ int main(void)
     
     rcc_config();
     vga_init();
+    adcrand_init();
     controller_config();
     
     snake_start();
     
     return 0;
 }
+
+
 
 

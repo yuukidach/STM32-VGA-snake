@@ -6,7 +6,7 @@
 #include "delay.h"
 
 #define NULL              0x0
-#define SNAKE_LEN_MAX     99
+#define SNAKE_LEN_MAX     49
 
 #define SNAKE_UP          4
 #define SNAKE_RIGHT       5

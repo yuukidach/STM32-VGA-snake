@@ -24,7 +24,7 @@ uint16_t buttonValue;
 uint8_t PS2_Cmd[2] = {0x01, 0x42};
 uint8_t PS2_Data[9] = {0x00};
 uint8_t PS2_Mask[]={
-		PSB_SELECT,
+    PSB_SELECT,
     PSB_L3,
     PSB_R3 ,
     PSB_START,
@@ -246,20 +246,4 @@ void PS2_Vibration(u8 motor1, u8 motor2){
     delay_us(16);
 }
 
-
-/*
- * @brief	Tell the car which direction to go during part 3.
- *        The default return value is PART3LEFT(0), once it is change to PART3RIGHT(1), it cannot be changed back.
- * @param	None
- * @retval PART3RIGHT (1): Means turning right at part 3
- *         PART3LEFT  (0): Means turning left at part 3
- */
-uint8_t getPart3Direction(void) {
-    uint8_t i = 0;
-    for (i = 0; i < 10; ++i) while(getButtonData() == PSB_L2);
-    if (i == 10 && getButtonData() == PSB_L2) {
-        part3Dir = PART3RIGHT;
-    }
-    return part3Dir;
-}
 /******************* (C) COPYRIGHT 2016 Yuuki_Dach *************END OF FILE****/

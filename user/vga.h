@@ -69,10 +69,13 @@ void vga_clear_screen(void);
 void vga_init(void);
 void vga_bitblt(PGDI_RECT prc, int16_t x, int16_t y, int16_t w, int16_t h, pu8 bm, uint16_t rop);
 void vga_draw_text(int16_t x, int16_t y, pu8 ptext, u16 rop);
+void vga_draw_nwords(int16_t x, int16_t y, pu8 ptext, u16 rop, u16 l);
 void vga_draw_textrec(PGDI_RECT prc, pu8 ptext, uint16_t style, uint16_t rop);
 void vga_draw_point(PGDI_RECT rc, u16 x, u16 y, u16 rop);
 void vga_draw_line(PGDI_RECT prc, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t rop);
 void vga_draw_rec(int16_t x0, int16_t y0, int16_t x1, int16_t y1, uint16_t rop);
 
 #endif /* __VGA_H */
+
+
 

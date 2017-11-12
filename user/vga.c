@@ -454,6 +454,27 @@ void vga_draw_text(int16_t x, int16_t y, pu8 ptext, u16 rop)
 	}
 }
 
+
+// Specify the number of the letters to draw
+void vga_draw_nwords(int16_t x, int16_t y, pu8 ptext, u16 rop, u16 l)
+{
+
+    u16	i, pos, xp;
+    u8	c;
+    pu8	ptx;
+
+	xp = x;
+	for (i = 0; i < l; i++) {
+		c = *(ptext++);
+		if (c >= GDI_SYSFONT_OFFSET) {
+			pos = (u16) (c - GDI_SYSFONT_OFFSET) * GDI_SYSFONT_BYTEWIDTH * GDI_SYSFONT_HEIGHT;
+			ptx = ((pu8) vga_word) + pos;
+			vga_bitblt(NULL, xp, y, GDI_SYSFONT_WIDTH, GDI_SYSFONT_HEIGHT, ptx, rop);
+			xp += GDI_SYSFONT_WIDTH;
+			if (xp >= VID_PIXELS_X) return;
+		}
+	}
+}
 //*****************************************************************************
 //	Draw text inside rectangle
 //
