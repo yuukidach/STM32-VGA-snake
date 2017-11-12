@@ -1,7 +1,7 @@
 STM32 VGA Snake Game
 ===
 ## Video
-[Bilibili](https://www.bilibili.com/video/av16265480/)
+[Bilibili](https://www.bilibili.com/video/av16265480/)  
 [Youtube](https://www.youtube.com/watch?v=F2g_jxPhLt0)
 
 ## Descriptions
@@ -17,6 +17,8 @@ Potentiometer
 PS2 controller
 
 ## Pin Connections
+| Pins| Function |
+| === | ===   |
 | PA1 | Vsync |
 | PA7 | Green |
 | PA8 | Hsync |
