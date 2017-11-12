@@ -17,15 +17,15 @@ Potentiometer
 PS2 controller
 
 ## Pin Connections
-| Pins| Function |
-| === | ===   |
-| PA1 | Vsync |
-| PA7 | Green |
-| PA8 | Hsync |
-| PB4 | DATA  | 
-| PB5 | CMD	  |
-| PB6 | CS    | 
-| PB7 | CLK   |
+|
+| :---: | :---: |
+| PA1   | Vsync |
+| PA7   | Green |
+| PA8   | Hsync |
+| PB4   | DATA  | 
+| PB5   | CMD   |
+| PB6   | CS    | 
+| PB7   | CLK   |
 
 ## Part of The Code Explaintion
 The part of VGA is copied from [here](http://www.artekit.eu/vga-output-using-a-36-pin-stm32/). You can click the link and see more details.  
